@@ -1,13 +1,19 @@
+import lombok.*;
+
+import javax.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Column;
+
 @Entity
 @Table(name = "Events")
 public class Events {
     @Id
-    Long id;
+    public Long id;
     @Column(name = "TITLE")
     String title;
 
     @Column(name = "DESCRIPTION")
-    String description;
+    public String description;
     
     // getters & setters
 }
